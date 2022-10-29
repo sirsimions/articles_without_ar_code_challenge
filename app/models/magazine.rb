@@ -1,4 +1,6 @@
-attr_accessor :name, :category
+require_relative 'article'
+class Magazine
+    attr_accessor :name, :category
 
     @@all= []
 
@@ -46,18 +48,3 @@ end
 
 end
 
-
-daily= Magazine.new("The standard", "Daily News")
-dail= Magazine.new("Taifa Leo", "Taarifa")
-dai= Magazine.new("Nation", "Daily News")
-
-puts daily.name
-puts daily.category
-
-puts dail.name
-puts dail.category
-
-puts dai.name
-puts dai.category
-
-puts Magazine.all
