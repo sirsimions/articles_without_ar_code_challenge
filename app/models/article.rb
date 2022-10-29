@@ -27,4 +27,5 @@ puts art1.title
 puts art2.author
 puts art2.magazine
 puts art2.title
+puts Article.all
 
