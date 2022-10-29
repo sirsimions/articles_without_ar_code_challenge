@@ -13,4 +13,10 @@ class Author
     end
   end
 
+  def magazines
+    articles.collect do |article|
+      article.magazine.uniq
+    end
+  end
+
 end
