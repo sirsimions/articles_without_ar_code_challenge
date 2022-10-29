@@ -34,6 +34,16 @@ def article_titles
   end
 end
 
+def contributing_authors
+  Article.all.select do |magazine|
+    magazine.magazine == self
+  end.collect do |author|
+    author.author
+  end.uniq.collect do |article|
+    article.articles.count > 2
+  end
+end
+
 end
 
 
