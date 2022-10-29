@@ -20,6 +20,15 @@ def contributors
   end
 end
 
+def self.find_by_name(name)
+  self.all.find do |magazine|
+    magazine.name == name
+  end
+end
+
+
+end
+
 
 daily= Magazine.new("The standard", "Daily News")
 dail= Magazine.new("Taifa Leo", "Taarifa")
