@@ -12,6 +12,14 @@ def self.all
   @@all
 end
 
+def contributors
+  Article.all.filter do |magazine|
+    magazine.magazine == self
+  end.collect do |magz|
+    magz.author
+  end
+end
+
 
 daily= Magazine.new("The standard", "Daily News")
 dail= Magazine.new("Taifa Leo", "Taarifa")
