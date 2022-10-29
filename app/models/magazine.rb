@@ -26,6 +26,13 @@ def self.find_by_name(name)
   end
 end
 
+def article_titles
+  Article.all.filter do |magazine|
+    magazine.magazine == self
+  end.collect do |article|
+    article.title
+  end
+end
 
 end
 
