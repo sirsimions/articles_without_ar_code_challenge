@@ -1,3 +1,4 @@
+require 'pry'
 class Article
     attr_reader :author, :magazine, :title
     
