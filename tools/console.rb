@@ -1,3 +1,5 @@
+# require 'pry'
+
 require_relative '../config/environment.rb'
 
 def reload
@@ -35,6 +37,6 @@ pp author_3.articles
 
 
 ### DO NOT REMOVE THIS
-binding.pry
+# binding.pry
 
 0

@@ -1,5 +1,4 @@
 # Please copy/paste all three classes into this file to submit your solution!
- 
 class Article
     attr_reader :author, :magazine, :title
     
